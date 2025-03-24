@@ -12,3 +12,10 @@ document.getElementById('contact-form').addEventListener('submit', function(even
         alert("Erro ao enviar mensagem, tente novamente.");
     });
 });
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x')
+    navbar.classList.toggle('active');
+}
